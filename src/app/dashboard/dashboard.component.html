@@ -9,15 +9,20 @@
             <div class="container-op">
 
                 <div class="card">
+                    
+                    <span class="text-red" *ngIf='location1Err' > Wrong city name </span>
                     <main>
                         <div class="srch_wrpr">
+                            <span class="text-red" *ngIf='location1Err' > Wrong city name </span>
                             <input type="checkbox" name="" class="checkbox">
                             <div class="srch_sb_cnt">
                                 <input type="text" name="text_bar" [(ngModel)]="location1" id="" class="sech_txt_inpt" placeholder="Type to search...">
                                 <button class="srch_btn" (click)="getWeatherReport(location1, 1)">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </button>
+                                
                             </div>
+                            
                         </div>
                       </main>
             
@@ -89,6 +94,7 @@
                 <div class="card">
                     <main>
                         <div class="srch_wrpr">
+                            <span class="text-red" *ngIf='location3Err' > Wrong city name </span>
                             <input type="checkbox" name="" class="checkbox">
                             <div class="srch_sb_cnt">
                                 <input type="text" name="text_bar" [(ngModel)]="location3" id="" class="sech_txt_inpt" placeholder="Type to search...">
@@ -167,6 +173,7 @@
                 <div class="card">
                     <main>
                         <div class="srch_wrpr">
+                            <span class="text-red" *ngIf='location2Err' > Wrong city name </span>
                             <input type="checkbox" name="" class="checkbox">
                             <div class="srch_sb_cnt">
                                 <input type="text" name="text_bar" [(ngModel)]="location2" id="" class="sech_txt_inpt" placeholder="Type to search...">
@@ -250,6 +257,7 @@
               <div class="card">
                   <main>
                       <div class="srch_wrpr">
+                        <span class="text-red" *ngIf='location4Err' > Wrong city name </span>
                           <input type="checkbox" name="" class="checkbox">
                           <div class="srch_sb_cnt">
                               <input type="text" name="text_bar" [(ngModel)]="location4" id="" class="sech_txt_inpt" placeholder="Type to search...">
@@ -328,6 +336,7 @@
               <div class="card">
                   <main>
                       <div class="srch_wrpr">
+                        <span class="text-red" *ngIf='location5Err' > Wrong city name </span>
                           <input type="checkbox" name="" class="checkbox">
                           <div class="srch_sb_cnt">
                               <input type="text" name="text_bar" [(ngModel)]="location5" id="" class="sech_txt_inpt" placeholder="Type to search...">
@@ -406,6 +415,7 @@
               <div class="card">
                   <main>
                       <div class="srch_wrpr">
+                        <span class="text-red" *ngIf='location6Err' > Wrong city name </span>
                           <input type="checkbox" name="" class="checkbox">
                           <div class="srch_sb_cnt">
                               <input type="text" name="text_bar" [(ngModel)]="location6" id="" class="sech_txt_inpt" placeholder="Type to search...">
@@ -490,6 +500,7 @@
               <div class="card">
                   <main>
                       <div class="srch_wrpr">
+                        <span class="text-red" *ngIf='location7Err' > Wrong city name </span>
                           <input type="checkbox" name="" class="checkbox">
                           <div class="srch_sb_cnt">
                               <input type="text" name="text_bar" [(ngModel)]="location7" id="" class="sech_txt_inpt" placeholder="Type to search...">
@@ -568,6 +579,7 @@
               <div class="card">
                   <main>
                       <div class="srch_wrpr">
+                        <span class="text-red" *ngIf='location8Err' > Wrong city name </span>
                           <input type="checkbox" name="" class="checkbox">
                           <div class="srch_sb_cnt">
                               <input type="text" name="text_bar" [(ngModel)]="location8" id="" class="sech_txt_inpt" placeholder="Type to search...">
@@ -646,6 +658,7 @@
               <div class="card">
                   <main>
                       <div class="srch_wrpr">
+                        <span class="text-red" *ngIf='location9Err' > Wrong city name </span>
                           <input type="checkbox" name="" class="checkbox">
                           <div class="srch_sb_cnt">
                               <input type="text" name="text_bar" [(ngModel)]="location9" id="" class="sech_txt_inpt" placeholder="Type to search...">

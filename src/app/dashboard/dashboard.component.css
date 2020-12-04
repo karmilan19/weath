@@ -100,3 +100,11 @@ span#relevant_info {
 span#relevant_info > strong {
     color: #ffffff;
 }
+.text-red{
+    top: 75%;
+    position: absolute;
+    left: 45%;
+    color: red;
+    font-size: small;
+    font-style: oblique;
+}
