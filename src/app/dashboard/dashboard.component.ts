@@ -52,6 +52,7 @@ export class DashboardComponent implements OnInit {
     
     this.http.get<any>('http://api.openweathermap.org/data/2.5/weather?q='+location+'&appid=f62ee3c16258619e3299c577cb68fb28&units=Metric').subscribe(data => {
       console.log( data );
+      console.log( data.status );
 
       switch(type){
         case 1:
@@ -84,6 +85,9 @@ export class DashboardComponent implements OnInit {
       }
 
       
+    }, (error) => {
+      // Here you can handle errors
+      console.log( 'error' )
     });
     
   }
